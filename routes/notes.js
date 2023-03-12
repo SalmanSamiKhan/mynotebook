@@ -14,8 +14,8 @@ noteRouter.get('/getnotes', getuser, async (req, res) => {
 
 // express validator conditions array
 const addnoteConditions = [
-    body('title', 'Please enter a valid title').isLength({ min: 3 }),
-    body('description', 'Please enter a valid description').isLength({ min: 5 })
+    body('title', 'Please enter a valid title').isLength({ min: 1 }),
+    body('description', 'Please enter a valid description').isLength({ min: 1 })
 ]
 
 // ********** Add Note *******

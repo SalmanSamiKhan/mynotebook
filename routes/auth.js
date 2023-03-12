@@ -12,7 +12,7 @@ const JWT_SECRET = 'somethingsecret'
 
 // express validator conditions array
 const signupConditions = [
-    body('name', 'Enter a valid name').isLength({ min: 3 }),
+    body('name', 'Enter a valid name').isLength({ min: 1 }),
     body('email', 'Enter a valid email').isEmail(),
     body('password', 'Password must be atleast 5 characters').isLength({ min: 4 })
 ]
